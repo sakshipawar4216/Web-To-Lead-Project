@@ -1,5 +1,6 @@
 let captchaClicked=false
 function clickHandler(event){
+    console.log("captchaClicked3",captchaClicked)
     if(captchaClicked){
         let input = document.querySelector(".input").value
     
@@ -30,6 +31,8 @@ function timestamp() {
     setInterval(timestamp, 500);
     
 function captchaSuccess(){
+    console.log("captchaClicked",captchaClicked)
         captchaClicked=true
+        console.log("captchaClicked1",captchaClicked)
     
 }
